@@ -1,0 +1,29 @@
+{
+  "name": "stroop-test",
+  "version": "1.0.0",
+  "description": "A gamified experiment on the famous Stroop Effect",
+  "main": "stroop-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traderjosh/stroop-test.git"
+  },
+  "keywords": [
+    "Phaser",
+    "HTML5 Game",
+    "Stroop Test",
+    "Psychology"
+  ],
+  "author": "Joshua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traderjosh/stroop-test/issues"
+  },
+  "homepage": "https://github.com/traderjosh/stroop-test#readme",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
