@@ -1,5 +1,8 @@
 # stroop-test
 
+## Installation
+`npm install` to install the dev dependencies
+
 ## Scripts
 - `npm start` to start the express server.
 - visit http://localhost:8081.
