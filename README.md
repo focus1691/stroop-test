@@ -1,5 +1,8 @@
 # stroop-test
 
+## Introduction
+A small game made with Phaser 3.
+
 ## Installation
 `npm install` to install the dev dependencies
 
