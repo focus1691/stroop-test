@@ -6,7 +6,7 @@ class playFeedback extends Phaser.Scene {
 		this.results = data.results;
 	}
 	preload () {
-  		var url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/plugins/dist/rexbbcodetextplugin.min.js';
+  		var url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexbbcodetextplugin.min.js';
   		this.load.plugin('rexbbcodetextplugin', url, true);
 
     	this.load.image('background', 'images/background.jpg');
@@ -84,7 +84,7 @@ class playInstructions extends Phaser.Scene {
 		this.results = this.mode === 2 ? data.results : [];
 	}
 	preload () {
-  		var url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/plugins/dist/rexbbcodetextplugin.min.js';
+  		var url = 'https://raw.githubusercontent.com/rexrainbow/phaser3-rex-notes/master/dist/rexbbcodetextplugin.min.js';
   		this.load.plugin('rexbbcodetextplugin', url, true);
 
     	this.load.image('background', 'images/background.jpg');
