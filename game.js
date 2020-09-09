@@ -488,7 +488,6 @@ class WordContainer extends Phaser.GameObjects.Container {
 		super(scene, config.x, config.y);
 
 		this.word = this.scene.add.dynamicBitmapText(0, 0, 'desyrel', 'Color', 24);
-		// this.word.setPosition(this.word.width / 2);
 		this.add(this.word);
 
 		this.setSize(this.word.width * 2, this.word.height * 2);
