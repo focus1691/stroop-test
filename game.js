@@ -431,12 +431,12 @@ class playGame extends Phaser.Scene {
 		width /= 10;
 		let x = 0, y = 0, k = 0;
 
-		for (let i = 0; i < 4; i++) {
+		for (let row = 0; row < 4; row++) {
 			x = 0;
 			y += 50;
-			for (let j = 0; j < 5; j++) {
-				x = j * width;
-				var word = new WordContainer(this, {x: x, y: y});
+			for (let col = 0; col < 5; col++) {
+				x = col * width;
+				var word = new WordContainer(this, { x, y });
 				word.setColor(this.colorArr[k++]);
 				this.words.push(word);
 			}
@@ -488,6 +488,7 @@ class WordContainer extends Phaser.GameObjects.Container {
 		super(scene, config.x, config.y);
 
 		this.word = this.scene.add.dynamicBitmapText(0, 0, 'desyrel', 'Color', 24);
+		// this.word.setPosition(this.word.width / 2);
 		this.add(this.word);
 
 		this.setSize(this.word.width * 2, this.word.height * 2);
@@ -505,6 +506,8 @@ class WordContainer extends Phaser.GameObjects.Container {
 		this.word.setText(config.text);
 
 		this.setSize(this.word.width * 2, this.word.height * 2);
+		this.word.setPosition(-(this.word.width / 2), -(this.word.height / 2));
+		this.setPosition(this.x + (this.word.width / 2), this.y + (this.word.height / 2));
 
 		this.word.tint = config.code;
 		this.colorName = config.color;
