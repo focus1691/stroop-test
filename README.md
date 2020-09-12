@@ -1,16 +1,17 @@
-# stroop-test
+## [Demo](https://stroop-test-game.netlify.app)
 
-## Introduction
-A small game made with Phaser 3.
+# stroop-test
+Gamified version of the famous Stroop Test experiment. Made with Phaser 3.
 
 ## Installation
-`npm install` to install the dev dependencies
+`npm install`
 
 ## Scripts
-- `npm start` to start the express server.
-- visit http://localhost:8081.
+- `npm start`
 
 ## The game
 - **Part One** - Drag words to matching color.
 - **Part Two** - Drag words to matching meaning.
+
+## Preview
 ![alt text](https://github.com/traderjosh/stroop-test/blob/master/images/preview.png "Logo Title Text 1")
