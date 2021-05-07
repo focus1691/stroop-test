@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -43,6 +44,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development'),
+    }),
+    new FaviconsWebpackPlugin({
+      logo: 'favicons/android-chrome-512x512.png',
+      cache: true,
+      inject: true,
     }),
   ]
 };

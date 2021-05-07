@@ -26,7 +26,7 @@ var config = {
   type: Phaser.AUTO,
   parent: 'stroop-test',
 title: "Stroop Test",
-url: "https://localhost/psychotechnology/stroop-test/",
+url: "https://www.psychotechnology.com/stroop-test/",
 version: "1.0.0",
   width: 800,
   height: 600,
