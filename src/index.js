@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import BBCodeTextPlugin from 'phaser3-rex-plugins/plugins/bbcodetext-plugin.js';
 //* Scenes
+import playIntro from './scenes/introductionScene'; 
 import preloader from './scenes/preloader';
 import playInstructions from './scenes/instructionsScene';
 import playGame from './scenes/playGameScene';
@@ -44,7 +45,7 @@ var config = {
       // ...
     ],
   },
-  scene: [preloader, playInstructions, playGame, playFeedback],
+  scene: [playIntro, preloader, playInstructions, playGame, playFeedback],
 };
 
 var game = new Phaser.Game(config);
