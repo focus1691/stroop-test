@@ -25,14 +25,14 @@ const DEFAULT_WIDTH = ratio * DEFAULT_HEIGHT;
 var config = {
   type: Phaser.AUTO,
   parent: 'stroop-test',
-title: "Stroop Test",
-url: "https://www.psychotechnology.com/stroop-test/",
-version: "1.0.0",
+  title: 'Stroop Test',
+  url: 'https://www.psychotechnology.com/stroop-test/',
+  version: '1.0.0',
   width: 800,
   height: 600,
   scale: {
-      mode: Phaser.DOM.FIT,
-      autoCenter: Phaser.DOM.CENTER_BOTH
+    mode: Phaser.DOM.FIT,
+    autoCenter: Phaser.DOM.CENTER_BOTH,
   },
   plugins: {
     global: [
@@ -44,7 +44,7 @@ version: "1.0.0",
       // ...
     ],
   },
-  scene: [preloader, playInstructions, playGame, playFeedback]
+  scene: [preloader, playInstructions, playGame, playFeedback],
 };
 
 var game = new Phaser.Game(config);
