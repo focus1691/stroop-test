@@ -5,7 +5,7 @@ export default class introductionScene extends Phaser.Scene {
     super('introduction');
   }
   preload() {
-    this.load.video('psychotechnology', NODE_ENV === 'development' ? psychotechnologyVideo : 'https://www.psychotechnology.com/videos/welcome.mp4', 'loadeddata', false, false);
+    this.load.video('psychotechnology', NODE_ENV === 'development' ? psychotechnologyVideo : 'https://www.psychotechnology.com/assets/videos/welcome.mp4', 'loadeddata', false, false);
   }
   create() {
     var vid = this.add.video(this.game.config.width / 2, this.game.config.height / 2, 'psychotechnology');
