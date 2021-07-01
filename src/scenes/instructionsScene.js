@@ -6,9 +6,9 @@ export default class playInstructions extends Phaser.Scene {
   constructor() {
     super('playInstructions');
   }
-  init(data) {
-    this.mode = data.mode === 2 ? 2 : 1;
-    this.results = this.mode === 2 ? data.results : [];
+  init({ mode, results }) {
+    this.mode = mode === 2 ? 2 : 1;
+    this.results = this.mode === 2 ? results : [];
   }
   create() {
     this.make.image({ key: 'background', x: 0, y: 0, width: this.cameras.main.width, origin: { x: 0, y: 0 }, scale: { x: 1, y: 1 } });

@@ -2,7 +2,7 @@
 import WordContainer from '../game-objects/WordContainer';
 
 export default class playGame extends Phaser.Scene {
-  constructor(mode) {
+  constructor() {
     super('playGame');
   }
   init(data) {

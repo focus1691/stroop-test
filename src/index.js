@@ -45,6 +45,7 @@ var config = {
       // ...
     ],
   },
+  // scene: [preloader, playFeedback],
   scene: [playIntro, preloader, playInstructions, playGame, playFeedback],
 };
 

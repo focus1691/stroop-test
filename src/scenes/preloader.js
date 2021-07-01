@@ -1,6 +1,8 @@
 import Phaser from 'phaser';
 //* Images
 import background from '../images/background.jpg';
+import menuBtn from '../images/MenuButton.png';
+import playBtn from '../images/PlayButton.png';
 //* Spritesheets
 import paintBucket from '../images/paintbucket.png';
 import paintBucketJSON from '../images/paintbucket.json';
@@ -45,6 +47,8 @@ export default class preloaderScene extends Phaser.Scene {
     this.newGraphics.setDepth(2);
 
     this.load.image('background', background);
+    this.load.image('menu_button', menuBtn);
+    this.load.image('play_button', playBtn);
 
     this.load.atlas('paint', paintBucket, paintBucketJSON);
 

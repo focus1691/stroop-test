@@ -19,7 +19,6 @@ export default class introductionScene extends Phaser.Scene {
     vid.on('complete', this.onComplete, this);
   }
   onComplete() {
-    console.log('ended');
     this.scene.start('preloaderScene');
   }
 }
