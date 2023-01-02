@@ -1,4 +1,4 @@
-## [Demo](https://stroop-test-game.netlify.app)
+## [Demo](https://www.psychotechnology.com/experiments/stroop-test/)
 
 # stroop-test
 Gamified version of the famous Stroop Test experiment. Made with Phaser 3.
